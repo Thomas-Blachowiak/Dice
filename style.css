@@ -1,0 +1,48 @@
+body {
+  background-color: #D5C9B7;
+  font-family: Lato;
+}
+:root {
+  --color: blueviolet;
+  --bg-color: lightgreen;
+}
+
+#title {
+  padding: 60px;
+  color: var(--color);
+}
+#one, #game, #two {
+  height: 400px;
+  color: var(--color);
+}
+#rollDice, #hold {
+  margin: 40px;
+}
+#scoreOne, #scoreTwo {
+  padding: 105px;
+}
+img {
+  width: 70px;
+  height: 70px;
+}
+
+.btn {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+  font-size: larger;
+  transition-property: font-size;
+  transition-duration: 0.8s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+h1, h5 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.offcanvas-body p {
+  font-style: italic;
+}

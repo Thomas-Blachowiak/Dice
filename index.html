@@ -30,43 +30,45 @@
   </div>
   <h1 class="text-center">Le jeu du dé</h1>
 </header>
-<div class="container text-center">
-  <div class="row align-items-start">
-    <!-- Column of the first Player -->
-    <div class="col g-col-5" id="one" >
-      <h1 id="playerOne" class="playerName-0">Joueur 1<span class="player-0 active-player"></span></h1>
-        <p>Score global :</p>
-        <p id="score-0" class="score">0</p><br>
-        <p>Score en cours :</p>
-        <p id="current-0" class="current-number">0</p>
-    </div>
-    <!-- Column of the game (roll dice, hold score, replay) -->
-    <div class="col g-col-2" id="game">
-      <h3>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
-          <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
-        </svg>
-        Lancer le dé
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
-          <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707z"/>
-        </svg>
-      </h3>
-      <button type="button" class="btn btn-lg btn-warning" id="rollDice">Lancer le dé</button><br>
-      <span id="diceNumber">0</span><br>
-      <span id="score"></span>      
-      <button type="button" class="btn btn-success" id="hold">Valider mon score</button><br>
-      <button type="button" class="btn btn-sm" id="replay">Nouvelle Partie</button>
-    </div>
-    <!-- Column of the second player -->
-    <div class="col g-col-5" id="two">
-      <h1 id="playerTwo" class="playerName-1">Joueur 2<span class="player-1 active-player"></span></h1> 
-        <p>Score global :</p>
-        <p id="score-1" class="score">0</p><br>
-        <p>Score en cours :</p>
-        <p id="current-1" class="current-number">0</p>
+<section>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <!-- Column of the first Player -->
+      <div class="col g-col-5" id="one" >
+        <h1 id="playerOne" class="playerName-0">Joueur 1<span class="player-0 active-player"></span></h1>
+          <p>Score global :</p>
+          <p id="score-0" class="score">0</p><br>
+          <p>Score en cours :</p>
+          <p id="current-0" class="current-number">0</p>
+      </div>
+      <!-- Column of the game (roll dice, hold score, replay) -->
+      <div class="col g-col-2" id="game">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+            <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
+          </svg>
+          Lancer le dé
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707z"/>
+          </svg>
+        </h3>
+        <button type="button" class="btn btn-lg btn-warning" id="rollDice">Lancer le dé</button><br>
+        <span id="diceNumber">0</span><br>
+        <span id="score"></span>      
+        <button type="button" class="btn btn-success" id="hold">Valider mon score</button><br>
+        <button type="button" class="btn btn-sm" id="replay">Nouvelle Partie</button>
+      </div>
+      <!-- Column of the second player -->
+      <div class="col g-col-5" id="two">
+        <h1 id="playerTwo" class="playerName-1">Joueur 2<span class="player-1 active-player"></span></h1> 
+          <p>Score global :</p>
+          <p id="score-1" class="score">0</p><br>
+          <p>Score en cours :</p>
+          <p id="current-1" class="current-number">0</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <script src="script.js"></script>
 </body>
 </html>

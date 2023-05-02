@@ -11,6 +11,7 @@
   <title>Jeux du dé</title>
 </head>
 <body>
+<!-- Create offcanvas for rules of the game -->
 <header class="container" id="title">
   <button id="rules" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Règles du jeu</button>
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -31,11 +32,15 @@
 </header>
 <div class="container text-center">
   <div class="row align-items-start">
+    <!-- Column of the first Player -->
     <div class="col g-col-5" id="one" >
       <h1 id="playerOne" class="playerName-0">Joueur 1<span class="player-0 active-player"></span></h1>
-      <p id="score-0" class="score">0</p><br>
-      <p id="current-0" class="current-number">0</p>
+        <p>Score global :</p>
+        <p id="score-0" class="score">0</p><br>
+        <p>Score en cours :</p>
+        <p id="current-0" class="current-number">0</p>
     </div>
+    <!-- Column of the game (roll dice, hold score, replay) -->
     <div class="col g-col-2" id="game">
       <h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
@@ -52,10 +57,13 @@
       <button type="button" class="btn btn-success" id="hold">Valider mon score</button><br>
       <button type="button" class="btn btn-sm" id="replay">Nouvelle Partie</button>
     </div>
+    <!-- Column of the second player -->
     <div class="col g-col-5" id="two">
       <h1 id="playerTwo" class="playerName-1">Joueur 2<span class="player-1 active-player"></span></h1> 
-      <p id="score-1" class="score">0</p><br>
-      <p id="current-1" class="current-number">0</p>
+        <p>Score global :</p>
+        <p id="score-1" class="score">0</p><br>
+        <p>Score en cours :</p>
+        <p id="current-1" class="current-number">0</p>
     </div>
   </div>
 </div>

@@ -10,7 +10,11 @@ body {
   padding: 60px;
   color: var(--color);
 }
-#one, #game, #two {
+#one, #two {
+  height: 200px;
+  color: var(--color);
+}
+#game {
   height: 400px;
   color: var(--color);
 }

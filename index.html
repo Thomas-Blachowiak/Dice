@@ -13,6 +13,7 @@
 <body>
 <!-- Create offcanvas for rules of the game -->
 <header class="container" id="title">
+  <h1 class="text-center m-5">Le jeu du dé</h1>
   <button id="rules" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Règles du jeu</button>
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
@@ -28,7 +29,6 @@
       </p>
     </div>
   </div>
-  <h1 class="text-center">Le jeu du dé</h1>
 </header>
 <section>
   <div class="container text-center">
@@ -69,6 +69,30 @@
     </div>
   </div>
 </section>
+<footer class="container-sm d-md-none m-5">
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Infos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Pour une meilleur jouabilité, il est préférable de jouer en mode paysage sur mobile.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

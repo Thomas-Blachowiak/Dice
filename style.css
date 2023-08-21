@@ -1,51 +1,68 @@
 body {
-  background-color: #D5C9B7;
-  font-family: Lato;
+  background-color: #F5F5F5; /* Une couleur plus claire pour le fond */
+  font-family: 'Segoe UI', sans-serif; /* Une police moderne et lisible */
 }
+
 :root {
-  --color: blueviolet;
+  --color: #3498db; /* Une nuance de bleu vif et moderne */
 }
 
 #title {
   padding: 60px;
   color: var(--color);
 }
+
 #one, #two {
   height: 200px;
   color: var(--color);
 }
+
 #game {
   height: 400px;
   color: var(--color);
 }
+
 #rollDice, #hold {
   margin: 40px;
+  background-color: var(--color); /* Utilisation de la couleur définie pour les boutons */
+  color: white; /* Texte en blanc pour contraster */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transition fluide au survol */
 }
+
+#rollDice:hover, #hold:hover {
+  background-color: #2980b9; /* Couleur légèrement plus foncée au survol */
+}
+
 #scoreOne, #scoreTwo {
   padding: 105px;
+  color: #555; /* Une couleur de texte plus sobre pour les scores */
 }
+
 img {
   width: 70px;
   height: 70px;
+  border-radius: 50%; /* Une bordure arrondie pour les images */
 }
 
 .btn {
-  font-weight: 400;
-  cursor: pointer;
+  font-weight: 600; /* Légèrement plus gras pour plus de contraste */
 }
 
 .btn:hover {
-  color: black;
+  color: #3498db; /* Changement de couleur au survol pour attirer l'attention */
   font-size: larger;
-  transition-property: font-size;
-  transition-duration: 0.8s;
-  transition-delay: 0s;
-  transition-timing-function: ease;
+  transition: font-size 0.8s ease;
 }
+
 h1, h5 {
-  text-decoration: underline;
+  text-decoration: none; /* Pas de soulignement pour les titres */
   font-weight: bold;
 }
+
 .offcanvas-body p {
-  font-style: italic;
+  font-style: normal; /* Texte normal pour l'offcanvas */
 }

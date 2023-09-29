@@ -66,3 +66,54 @@ h1, h5 {
 .offcanvas-body p {
   font-style: normal; /* Texte normal pour l'offcanvas */
 }
+
+#rollDice::before {
+  content: "Lancer le dé"; /* Texte complet */
+  display: block;
+}
+
+#hold::before {
+  content: "Valider mon score"; /* Texte complet */
+  display: block;
+}
+
+/* Media query pour les écrans de petite taille, tels que les mobiles */
+@media (max-width: 967px) {
+  body {
+    font-size: 14px; /* Réduire la taille de la police pour une meilleure lisibilité sur mobile */
+  }
+
+  #title {
+    padding: 20px; /* Réduire l'espace de marge sur le titre */
+  }
+
+  #one, #two {
+    height: auto; /* Ajuster la hauteur automatiquement en fonction du contenu */
+  }
+
+  #game {
+    height: auto; /* Ajuster la hauteur automatiquement en fonction du contenu */
+  }
+
+  #rollDice, #hold, #replay {
+    margin: 20px; /* Réduire la marge autour des boutons */
+    padding: 8px 16px; /* Réduire la taille des boutons */
+  }
+
+  h1, h5 {
+    font-size: 1.2rem; /* Réduire la taille de la police des titres */
+  }
+  #rollDice, #hold {
+    margin: 10px; /* Réduire la marge autour des boutons */
+    padding: 5px 10px; /* Réduire la taille des boutons */
+    font-size: 14px; /* Réduire la taille de la police des boutons */
+  }
+
+  #rollDice:before {
+    content: "Lancer"; /* Texte abrégé */
+  }
+
+  #hold:before {
+    content: "Valider"; /* Texte abrégé */
+  }
+}

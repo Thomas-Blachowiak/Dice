@@ -16,3 +16,7 @@ Validez votre score tant qu'il en est encore temps !
 Le premier à avoir 100 points gagne la partie !
 
 Bonne chance !
+
+## Accéder au site en ligne:
+
+**https://dice.thomasblachowiak.fr**
